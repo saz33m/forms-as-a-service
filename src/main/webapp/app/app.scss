@@ -3,17 +3,17 @@
 // Import Bootstrap source files from node_modules
 @import 'node_modules/bootstrap/scss/bootstrap';
 body {
-  background-color:#f1f1f1;
-  color: color("ink");
+  background-color: #f1f1f1;
+  color: color('ink');
   overflow-x: hidden;
 
   display: block;
 }
 
 html {
-  font-feature-settings: "kern" 1;
+  font-feature-settings: 'kern' 1;
   font-kerning: normal;
-  font-family: Source Sans Pro Web, Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   font-size: 100%;
 }
 
@@ -30,6 +30,10 @@ a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
+}
+
+.background {
+  background: #ffffff;
 }
 
 // .app-container {

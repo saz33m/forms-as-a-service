@@ -1,0 +1,13 @@
+---
+applications:
+  - name: formservice
+    memory: 800MB
+    path: .
+    instances: 1
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack
+    env:
+      SPRING_PROFILES_ACTIVE: prod
+      JBP_CONFIG_OPEN_JDK_JRE: '{ "jre": { version: 11.+ } }'
+    # services:
+    #   - formservice-rds

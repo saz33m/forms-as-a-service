@@ -1,0 +1,85 @@
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" ID="SM46e2a82a8b2d461470a3e695cb82bf83bb06cf8ff" entityID="https://feduatsso.hud.gov">
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ds:Reference URI="#SM46e2a82a8b2d461470a3e695cb82bf83bb06cf8ff">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>AuSGtdTa7DySghSU3ilQWe41CiJn2bridfMPxXTl6h4=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+hyAzYOSFoI49xPmVRcCcTEGpX5EbSCQPFlWDxPiwYKmJ2Jqym0tWQV79SuKsTpdH4Dio+EDouj3J
+wA1UarW/ZIznJyzgUlx0+oil89r9UkOIuwle1rxqcgxcnrNdonMkHpu2NYy7Cl4FCvPB0UISwY8O
+few70oJhxOCt1JzZx9znePQIu8fNHGIBPOOPuhsOblEFZRS09l50VefgIhFYxU2KG9Pk5RyAKl80
+j3koTRq1eJyOsBqAwhN5L/JRwlwugCkoh6u08UsVQ3hksG6H4K/WPjTuY+hkN5moUq0ioC9JTyjZ
+2zl8BVOw1KIXvAXWqVw/qyj41I0t06esW/A+QQ==
+</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:X509Data>
+<ds:X509Certificate>
+MIIGLjCCBRagAwIBAgIQAgls95Wvzspk/W55O33SfTANBgkqhkiG9w0BAQsFADBeMQswCQYDVQQG
+EwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMR0w
+GwYDVQQDExRHZW9UcnVzdCBSU0EgQ0EgMjAxODAeFw0yMDA2MDkwMDAwMDBaFw0yMTA2MjMxMjAw
+MDBaMIGYMQswCQYDVQQGEwJVUzEdMBsGA1UECBMURGlzdHJpY3Qgb2YgQ29sdW1iaWExEzARBgNV
+BAcTCldhc2hpbmd0b24xOTA3BgNVBAoTMFUuUy4gRGVwYXJ0bWVudCBvZiBIb3VzaW5nIGFuZCBV
+cmJhbiBEZXZlbG9wbWVudDEaMBgGA1UEAxMRZmVkdWF0c3NvLmh1ZC5nb3YwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQDDTOt95t26K2wEGLBAMivcTLqbllFH5A23DLVONWk+CaBmKBIN
+JwSX6iD4aSwo51/wU7TlzNE4H2kDk4Bjy8yDyz/uTjxLtfm09mbheLs7Ey3B1MDBKV4A6Pxt5ag/
+77XrjEikfvuhNkeJOwSx8bXixJnXo6oizD/zjiFCjlSS3POHnMMGi1ZPhmCFLszGIC6/uzZtJmWv
+n7OyVHIsZBnkAzVZOvXRoyojr4KcoVN3HZkGVAekakVtD4JzgAnl4TUNAZPqZtVc7icrtjYn6Guu
+4q8eb2w1mwDSIs+/to035ZK+I2ULOUFEOXKv1c/kJsy6vapiQjOZa5oX7BfvYeQ7AgMBAAGjggKr
+MIICpzAfBgNVHSMEGDAWgBSQWP+wnHWoUVR3se3yo0MWOJ5sxTAdBgNVHQ4EFgQUC8o4oXANFHAB
+mxDx58is9A6EcO0wHAYDVR0RBBUwE4IRZmVkdWF0c3NvLmh1ZC5nb3YwDgYDVR0PAQH/BAQDAgWg
+MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA+BgNVHR8ENzA1MDOgMaAvhi1odHRwOi8v
+Y2RwLmdlb3RydXN0LmNvbS9HZW9UcnVzdFJTQUNBMjAxOC5jcmwwTAYDVR0gBEUwQzA3BglghkgB
+hv1sAQEwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAIBgZngQwB
+AgIwdQYIKwYBBQUHAQEEaTBnMCYGCCsGAQUFBzABhhpodHRwOi8vc3RhdHVzLmdlb3RydXN0LmNv
+bTA9BggrBgEFBQcwAoYxaHR0cDovL2NhY2VydHMuZ2VvdHJ1c3QuY29tL0dlb1RydXN0UlNBQ0Ey
+MDE4LmNydDAMBgNVHRMBAf8EAjAAMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHUA9lyUL9F3MCIU
+VBgIMJRWjuNNExkzv98MLyALzE7xZOMAAAFymq6mkAAABAMARjBEAiAhgaz6HJC05fb8wNgDNrLV
+VUyodllQUE/tcsi/Cv+X3wIgKmrw2oeWKUjghyk34aJa6B3PR4KZdnZgvnS3ErNVYxEAdgBc3EOS
+/uarRUSxXprUVuYQN/vV+kfcoXOUsl7m9scOygAAAXKarqarAAAEAwBHMEUCIQCMXP+Qw7p76gP7
+QFTmYNX1phoELExH7YOF+gL5aohN8gIgeItLKjDxA4EyhG7d64ZyYg6sEU7YAUWGxjOe54/xoAAw
+DQYJKoZIhvcNAQELBQADggEBALCdCZpf3OBp/Jx+pYa6UscbphXpeETrqdtBbAz48/FtSJX2gHGH
+ydxG+zgdf7Di0xt0mGhqt9ANUN3eD+rdAMt4tUNETGc+hgUTYx1NwizwD3GKhEe7IiOrzn9fTVge
+Zdtm59E6cb+ybPQVVKKLHwg3nAydYUfd7J/2PDVHnbGDSuAua7OlTlwjNm3D7lEwAdBJJuiS1HWY
+vD6CyM6F1u4kHEHT1AOaCcpF36Wu6BE0T8nUQJEZlZz7tn9xxubtgeajgxbYtkjgyKYRjl6Uyjmd
+i3xE3BEN4MEqCktaNJSfAgEP0ZpYpbppAswMMlqVQXU51g4n66ogUFpw0ryQMU4=
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</ds:Signature><IDPSSODescriptor ID="SM178c18b17632d0763bfc70e725dc39f3282952b37b7" WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <KeyDescriptor use="encryption">
+            <ns1:KeyInfo xmlns:ns1="http://www.w3.org/2000/09/xmldsig#" Id="SM31c31d2c320f91141177401204a4deb7bdad1863df">
+                <ns1:X509Data>
+                    <ns1:X509IssuerSerial>
+                        <ns1:X509IssuerName>CN=GeoTrust RSA CA 2018,OU=www.digicert.com,O=DigiCert Inc,C=US</ns1:X509IssuerName>
+                        <ns1:X509SerialNumber>2707396779215785620989403917696488061</ns1:X509SerialNumber>
+                    </ns1:X509IssuerSerial>
+                    <ns1:X509Certificate>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</ns1:X509Certificate>
+                    <ns1:X509SubjectName>CN=feduatsso.hud.gov,O=U.S. Department of Housing and Urban Development,L=Washington,ST=District of Columbia,C=US</ns1:X509SubjectName>
+                </ns1:X509Data>
+            </ns1:KeyInfo>
+        </KeyDescriptor>
+        <KeyDescriptor use="signing">
+            <ns2:KeyInfo xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" Id="SMe4df1a0c2db7f59036cd437aafbf240a82872f89f9">
+                <ns2:X509Data>
+                    <ns2:X509IssuerSerial>
+                        <ns2:X509IssuerName>CN=GeoTrust RSA CA 2018,OU=www.digicert.com,O=DigiCert Inc,C=US</ns2:X509IssuerName>
+                        <ns2:X509SerialNumber>2707396779215785620989403917696488061</ns2:X509SerialNumber>
+                    </ns2:X509IssuerSerial>
+                    <ns2:X509Certificate>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</ns2:X509Certificate>
+                    <ns2:X509SubjectName>CN=feduatsso.hud.gov,O=U.S. Department of Housing and Urban Development,L=Washington,ST=District of Columbia,C=US</ns2:X509SubjectName>
+                </ns2:X509Data>
+            </ns2:KeyInfo>
+        </KeyDescriptor>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://feduatsso.hud.gov/affwebservices/public/saml2sso"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://feduatsso.hud.gov/affwebservices/public/saml2sso"/>
+    </IDPSSODescriptor>
+</EntityDescriptor>

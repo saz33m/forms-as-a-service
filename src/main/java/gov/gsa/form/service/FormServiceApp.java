@@ -1,5 +1,6 @@
 package gov.gsa.form.service;
 
+import com.github.ulisesbocchio.spring.boot.security.saml.annotation.EnableSAMLSSO;
 import gov.gsa.form.service.config.ApplicationProperties;
 import gov.gsa.form.service.config.DefaultProfileUtil;
 import io.github.jhipster.config.JHipsterConstants;
@@ -27,6 +28,7 @@ import java.util.Collection;
 		DataSourceTransactionManagerAutoConfiguration.class, HibernateJpaAutoConfiguration.class, LiquibaseAutoConfiguration.class})
 @EnableConfigurationProperties(ApplicationProperties.class)
 @EnableScheduling
+@EnableSAMLSSO
 public class FormServiceApp {
 
 	private static final Logger LOG = LoggerFactory.getLogger(FormServiceApp.class);

@@ -27,7 +27,7 @@ export const App = () => {
           toastClassName="toastify-toast"
         />
         <Header />
-        <main className="main-content mt-3" id="main-content" aria-label="Content">
+        <main className="main-content  background" id="main-content" aria-label="Content">
           <div>
             <div className="grid-container">
               <div className="grid-row">

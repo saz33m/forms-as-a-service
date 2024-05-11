@@ -1,6 +1,6 @@
 import './header.scss';
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 // tslint:disable-next-line
 const close = require('../../../../content/images/close.png');
 // tslint:disable-next-line
@@ -16,20 +16,19 @@ const irsLogo = require('../../../../content/images/irs-logo.png');
 
 const Header = () => {
   return (
-    <div>
-      <a className="usa-skipnav" href="#main-content">Skip to main content</a>
-      <div className="usa-banner" aria-label="Official government website">
-        <div className="usa-accordion" style={{ color: 'white', backgroundColor: '#171716' }}>
+    <div style={{ background: '#ffffff' }}>
+      <section className="usa-banner" aria-label="Official government website">
+        <div className="usa-accordion">
           <header className="usa-banner__header">
             <div className="usa-banner__inner">
               <div className="grid-col-auto">
                 <img className="usa-banner__header-flag" src={usFlag} alt="U.S. flag" />
               </div>
-              <div className="grid-col-fill tablet:grid-col-auto" style={{ color: '#c6cace' }}>
-                <p className="usa-banner__header-text" >An official website of the United States government</p>
-                <p className="usa-banner__header-action" aria-hidden="true" style={{ color: '#c6cace' }}>Here’s how you know</p>
+              <div className="grid-col-fill tablet:grid-col-auto">
+                <p className="usa-banner__header-text">An official website of the United States Government</p>
+                <p className="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
               </div>
-              <button className="usa-accordion__button usa-banner__button" style={{ color: '#c6cace' }} aria-expanded="false" aria-controls="gov-banner">
+              <button className="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
                 <span className="usa-banner__button-text">Here’s how you know</span>
               </button>
             </div>
@@ -68,10 +67,10 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="usa-overlay" />
-      <header className="usa-header usa-header--basic">
-        <div className="usa-nav-container">
+      </section>
+
+      <header className="usa-nav-container" style={{ background: '#ffffff' }}>
+        <div className="usa-nav-container" >
           <div className="usa-navbar desktop:maxw-card height-auto flex-align-right">
             <div className="logo">
               <Link to="/">
@@ -79,45 +78,45 @@ const Header = () => {
               </Link>
               <span className="usa-sr-only">Home</span>
             </div>
-            <button className="usa-menu-btn">Menu</button>
+
           </div>
-          <nav aria-label="Primary navigation" className="usa-nav" role="navigation">
-            <button className="usa-nav__close">
-              <img src={close} alt="close" />
-            </button>
-            <ul className="usa-nav__primary usa-accordion">
-              <li className="usa-nav__primary-item">
-                <NavLink exact activeClassName="usa-current" to="/">
-                  <span>Home</span>
-                </NavLink>
-              </li>
-              <li className="usa-nav__primary-item">
-                <button className="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-2">
-                  <span>Forms</span>
-                </button>
-                <ul id="nav-2" className="usa-nav__submenu">
-                  <li className="usa-nav__submenu-item">
-                    <Link to="/fheo">
-                      <span>FHEO</span>
-                    </Link>
-                  </li>
-                  <li className="usa-nav__submenu-item">
-                    <Link to="/">
-                      <span>MTW</span>
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li className="usa-nav__primary-item">
-                <a href="/" ><span>Dashboard</span></a>
-              </li>
-              <li className="usa-nav__primary-item">
-                <NavLink className="usa-nav__link" exact activeClassName="usa-current" to="/admin">
-                  <span>Admin</span>
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
+          {/*<nav aria-label="Primary navigation" className="usa-nav" role="navigation">*/}
+          {/*  <button className="usa-nav__close">*/}
+          {/*    <img src={close} alt="close" />*/}
+          {/*  </button>*/}
+          {/*  <ul className="usa-nav__primary usa-accordion">*/}
+          {/*    <li className="usa-nav__primary-item">*/}
+          {/*      <NavLink exact activeClassName="usa-current" to="/">*/}
+          {/*        <span>Home</span>*/}
+          {/*      </NavLink>*/}
+          {/*    </li>*/}
+          {/*    <li className="usa-nav__primary-item">*/}
+          {/*      <button className="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-2">*/}
+          {/*        <span>Forms</span>*/}
+          {/*      </button>*/}
+          {/*      <ul id="nav-2" className="usa-nav__submenu">*/}
+          {/*        <li className="usa-nav__submenu-item">*/}
+          {/*          <Link to="/fheo">*/}
+          {/*            <span>FHEO</span>*/}
+          {/*          </Link>*/}
+          {/*        </li>*/}
+          {/*        <li className="usa-nav__submenu-item">*/}
+          {/*          <Link to="/">*/}
+          {/*            <span>MTW</span>*/}
+          {/*          </Link>*/}
+          {/*        </li>*/}
+          {/*      </ul>*/}
+          {/*    </li>*/}
+          {/*    <li className="usa-nav__primary-item">*/}
+          {/*      <a href="/" ><span>Dashboard</span></a>*/}
+          {/*    </li>*/}
+          {/*    <li className="usa-nav__primary-item">*/}
+          {/*      <NavLink className="usa-nav__link" exact activeClassName="usa-current" to="/admin">*/}
+          {/*        <span>Admin</span>*/}
+          {/*      </NavLink>*/}
+          {/*    </li>*/}
+          {/*  </ul>*/}
+          {/*</nav>*/}
         </div>
       </header>
     </div>

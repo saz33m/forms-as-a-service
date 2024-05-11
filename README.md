@@ -211,3 +211,39 @@ The default setting are optimized for middle scale clusters. You are free to inc
 
 Sometimes the database changelog lock gets corrupted. You will need to connect to the database using `kubectl exec -it` and remove all lines of liquibases `databasechangeloglock` table.
 
+## To deploy to Cloud.gov sandbox
+
+gradlew -Pprod clean bootWar
+
+If not logged in, do the below (https://cloud.gov/docs/getting-started/setup/)
+cf login -a api.fr.cloud.gov  --sso
+Navigate to the website and copy the temp auth code
+
+Then choose the org and space from the list
+sandbox-gsa
+syed.azeem
+
+Make sure to log in to cloud.gov and remove the application and any routes.  Then deploy.
+
+cf push -p build/libs/*.war or, for windows use the full filename, i.e.
+cf push -p build/libs/formservice-2.3.war
+
+Command takes a while.
+
+Refresh cloud.gov and ensure to add a route. with /faas on the end.
+
+
+
+# KEY AND CERT
+## private key
+openssl genrsa -out localhost.key 2048
+## PEM KEY to DER
+openssl pkcs8 -topk8 -inform PEM -outform DER -in  localhost.key -out  localhost.key.der -nocrypt
+
+## cert
+openssl req -new -x509 -key localhost.key -out localhost.cert -days 3650 -subj /CN=localhost
+
+
+# BEFORE PUSHING
+Remove src/main/resources/config/application.yml signrequest API Key
+Remove src/main/resources/config/tls/localhost.key.der

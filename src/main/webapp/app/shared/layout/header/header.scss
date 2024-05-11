@@ -2,82 +2,75 @@ $header-color: #fff;
 $header-color-secondary: #bbb;
 $header-color-hover: darken($header-color, 20%);
 
-/* ==========================================================================
-Developement Ribbon
-========================================================================== */
-.ribbon {
-  background-color: rgba(170, 0, 0, 0.5);
-  left: -3.5em;
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  overflow: hidden;
-  position: absolute;
-  top: 30px;
-  white-space: nowrap;
-  width: 15em;
-  z-index: 99999;
-  pointer-events: none;
-  opacity: 0.75;
-  a {
-    color: #fff;
-    display: block;
-    font-weight: 400;
-    margin: 1px 0;
-    padding: 10px 50px;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 0 5px #444;
-    pointer-events: none;
-  }
+.usa-header--extended .logo-navbar {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+  height: auto;
+  overflow: auto;
 }
-.close {
-  display: inline-block;
-  background: url('../../../../content/images/close.png') no-repeat center top;
-  background-size: contain;
-}
-.usa-menu-btn {
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: subpixel-antialiased;
-  border: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  font-weight: 400;
-  margin-right: 14px;
-  margin-bottom: 6px;
-  margin-top: 6px;
-  padding: 0;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  background-color: #005ea2;
-  color: #fff;
-  font-size: .87rem;
-  height: 3rem;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
+
 @media (min-width: 64em) {
   .logo {
-    margin-top: 2rem ;
-    margin-bottom: 0rem ;
-    font-size: 1.46rem ;
-    line-height: 1.1;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+    margin-left: -2.5rem;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .banner {
+    padding-left: 0rem;
+  }
+  .hud-logo {
+    width: 130px;
+    height: 130px;
+    margin-left: 1rem;
+  }
+  .header-txt {
+    color: white;
+    line-height: 45px;
+    font-style: normal;
+    font-size: 2.5rem;
+    display: block;
+    font-weight: 700;
+    margin: 2.5rem 0 1.5rem 1rem;
+  }
+  .txt-container {
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
   }
 }
 @media (max-width: 63.99em) {
   .logo {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 0px;
-    flex: 1 0 0;
-    font-size: 0.93rem;
-    line-height: 0.9;
-    margin-left: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1.1rem;
+    margin-left: 0.5rem;
+  }
+  .banner {
+    padding-left: 1rem;
+  }
+  .hud-logo {
+    width: 70px;
+    height: 70px;
+    margin-top: 2rem;
+  }
+  .usa-navbar {
+    height: 6rem;
+  }
+  .header-txt {
+    color: white;
+    line-height: 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1.5rem 1rem;
+  }
+  .txt-container {
+    margin-top: -3.8rem;
+    margin-left: 6.5rem;
   }
 }

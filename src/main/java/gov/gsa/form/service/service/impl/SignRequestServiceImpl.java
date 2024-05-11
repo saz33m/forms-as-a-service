@@ -33,7 +33,7 @@ public class SignRequestServiceImpl implements SignRequestService {
 
     private static final String REDIRECT_URL_SIGNED = "/ui#/sign-success";
     private static final String REDIRECT_URL_NOT_SIGNED = "/ui#/sign-unsuccessful";
-    private static final String HTTPS = "https://";
+    private static final String HTTPS = "http://";
     private static final String FAAS = "/faas";
     private static final String USER = "user";
 
@@ -74,7 +74,8 @@ public class SignRequestServiceImpl implements SignRequestService {
     }
 
     private SignRequestPayload buildRequest(byte[] encodedContent, String pdfName) {
-        String redirectUrl = String.format("%s%s:%s%s", HTTPS, this.host, this.port, FAAS);
+         // String redirectUrl = String.format("%s%s:%s%s", HTTPS, this.host, this.port, FAAS);
+       String redirectUrl = String.format("%s%s%s", HTTPS, this.host, FAAS);
         String urlToRedirectOnceSigned = redirectUrl + REDIRECT_URL_SIGNED;
         String urlToRedirectIfNotSigned = redirectUrl + REDIRECT_URL_NOT_SIGNED;
         User user = (User) request.getSession().getAttribute(USER);

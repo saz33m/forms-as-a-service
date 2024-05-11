@@ -1,6 +1,7 @@
 package gov.gsa.form.service.security;
 
 import gov.gsa.form.service.dto.User;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.security.saml.SAMLCredential;
 import org.springframework.security.saml.userdetails.SAMLUserDetailsService;
@@ -11,10 +12,12 @@ import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
 
 @Named
+@Slf4j
 public class UserDetails  implements SAMLUserDetailsService {
 
     @Override
     public User loadUserBySAML(SAMLCredential credential)  {
+        log.info("******* Parsing User Details, {}", credential.toString());
         HttpServletRequest request =
             ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes())
                 .getRequest();

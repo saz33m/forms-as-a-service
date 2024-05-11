@@ -1,0 +1,11 @@
+---
+applications:
+  - name: irs8821
+    path: .
+    instances: 1
+    memory: 1G
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack
+    env:
+      SPRING_PROFILES_ACTIVE: prod
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }, memory_calculator: { stack_threads: 25 } }'
